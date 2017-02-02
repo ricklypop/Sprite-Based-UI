@@ -46,8 +46,14 @@ public class UISprite : SpriteEventListener {
 	public void fullTransition(){
 		StartCoroutine(canvas.transitionOut (transitionTo));
 	}
+		
+	protected override void spritePressedDown (bool[] spritePress){}
 
-	protected override void spritePressed (bool[] spritePress){}
+	protected override void spritePressedUp (bool[] spritePress){}
+
+	protected override void spriteButtonUp (bool[] buttonPress){}
+
+	protected override void spriteButtonDown (bool[] buttonPress){}
 	
 	protected override void spriteHover (){}
 
